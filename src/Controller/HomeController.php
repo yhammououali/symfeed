@@ -9,8 +9,6 @@ class HomeController extends AbstractController
 {
     public function homepage(): Response
     {
-        return new Response(
-            '<html><body>Welcome to Symfeed app!</body></html>'
-        );
+        return $this->render('home/homepage.html.twig');
     }
 }
