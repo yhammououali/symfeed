@@ -9,6 +9,8 @@ class HomeController extends AbstractController
 {
     public function homepage(): Response
     {
-        return new Response('Welcome to Symfeed app!');
+        return new Response(
+            '<html><body>Welcome to Symfeed app!</body></html>'
+        );
     }
 }
